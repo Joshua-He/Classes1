@@ -1,4 +1,6 @@
 #include <iostream>
+#ifndef MEDIA_H
+#define MEDIA_H
 
 class Media
 {
@@ -16,3 +18,5 @@ class Media
 
 
 };
+
+#endif

@@ -3,6 +3,7 @@
 #include <string.h>
 #include "Movies.h"
 #include <vector>
+#include "VideoGame.h"
 
 using namespace std;
 
@@ -26,6 +27,15 @@ int main(){
 	mediaList.push_back(m);
 	count++;
       }
+      if(mediaType == 2){
+	VideoGame* v = new(VideoGame);
+	v->setInfo();
+	v->displayInfo();
+	mediaList.push_back(v);
+	count++;
+
+      }
+      
     } 
 
     if (!strcmp(input, "QUIT")){
