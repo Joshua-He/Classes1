@@ -4,21 +4,26 @@
 
 using namespace std;
 
+//Constructor
 VideoGame::VideoGame(){
   type =2; 
   publisher[0] = '\0';
   rating[0] = '\0';
 }
+VideoGame::~VideoGame(){
+  //Deconstructor
+}
 
 void VideoGame::setInfo(){
+  cout << "Enter video game info: " << endl; 
   cout << "Enter title" << endl;
-  cin >> title;
+  cin.getline(title, 100);
   cout << "Enter Year" << endl;
-  cin >> year;
+  cin.getline(year, 10);
   cout << "Enter Publisher" << endl;
-  cin >> publisher;
+  cin.getline(publisher, 100);
   cout << "Enter rating" << endl;
-  cin >> rating;
+  cin.getline(rating, 100);
 }
 
 void VideoGame::displayInfo(){

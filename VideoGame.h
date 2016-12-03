@@ -7,6 +7,7 @@ using namespace std;
 class VideoGame: public Media{
  public:
   VideoGame();
+  ~VideoGame();
   char publisher[100];
   char rating[100];
   void setInfo();

@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//Constructor
 Music::Music(){
   type =3; 
   artist[0] = '\0';
@@ -12,19 +13,23 @@ Music::Music(){
   duration[0] = '\0';
 
 }
+Music::~Music(){
+  //Deconstructor
+}
 
 void Music::setInfo(){
 
+  cout << "Enter music info: " << endl; 
   cout << "enter title" << endl;
-  cin >> title;
+  cin.getline(title, 100);
   cout << "enter artist" << endl;
-  cin >> artist;
+  cin.getline(artist, 100);
   cout << "enter year" << endl;
-  cin >> year;
+  cin.getline(year, 10);
   cout << "enter publisher" << endl;
-  cin >> publisher;
+  cin.getline(publisher, 100);
   cout << "enter duration" << endl;
-  cin >> duration;
+  cin.getline(duration, 100);
 }
 void Music::displayInfo(){
   cout << "Music info: " << title << ", " << artist << ", " << year << "\

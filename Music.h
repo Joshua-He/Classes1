@@ -4,6 +4,7 @@
 class Music: public Media{
  public:
   Music();
+  ~Music();
   char artist[100];
   char publisher[100];
   char duration[100];
