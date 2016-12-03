@@ -5,6 +5,7 @@
 using namespace std;
 
 VideoGame::VideoGame(){
+  type =2; 
   publisher[0] = '\0';
   rating[0] = '\0';
 }

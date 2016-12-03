@@ -1,7 +1,7 @@
-
 #include <iostream>
+#include "Media.h"
 
-class Music{
+class Music: public Media{
  public:
   Music();
   char artist[100];

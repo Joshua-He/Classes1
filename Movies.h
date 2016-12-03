@@ -12,5 +12,5 @@ class Movies: public Media{
   char rating[100];
   void setInfo();
   void displayInfo();
-}
+};
 

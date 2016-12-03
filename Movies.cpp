@@ -7,6 +7,7 @@
 using namespace std;
 
 Movies::Movies(){
+  type =1; 
   director[0] = '\0';
   duration[0] = '\0';
   year[0] = '\0';
